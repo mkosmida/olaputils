@@ -62,7 +62,9 @@ namespace OLAPUtils.Connection
             }
             set { SetValue(PROPERTY_LOCALE_IDENTIFIER, value.ToString()); }
         }
-
+        /// <summary>
+        /// Gets or sets the ConnetionString property
+        /// </summary>
         public string ConnectionString
         {
             get { return string.Join(";", _connectionStringKeyWords.Select(x => x.Key + "=" + x.Value).ToArray()); }

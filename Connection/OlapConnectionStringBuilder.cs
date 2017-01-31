@@ -20,6 +20,7 @@ namespace OLAPUtils.Connection
         private const string PROPERTY_PERSIST_SECURITY_INFO = "Persist Security Info";
         private const string PROPERTY_PROMPT = "Prompt";
         private const string PROPERTY_LOCALE_IDENTIFIER = "LocaleIdentifier";
+        //HELLO!
 
         private readonly Dictionary<string, string> _connectionStringKeyWords = new Dictionary<string, string>();
 

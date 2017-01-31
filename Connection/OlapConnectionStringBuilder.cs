@@ -161,11 +161,11 @@ namespace OLAPUtils.Connection
 
         private void SetConnectionString(string value)
         {
-            var props = value.Split(';');
+            var props = value.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var elem in props)
             {
-                var kv = elem.Split('=');
+                var kv = elem.Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
                 if (kv.Length > 1)
                 {
                     var k = kv[0];
